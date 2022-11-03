@@ -1,0 +1,21 @@
+{
+  "name": "custom-resource",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@aws-amplify/cli-extensibility-helper": "^2.4.4",
+    "@types/aws-lambda": "^8.10.108",
+    "@types/cfn-response": "^1.0.5",
+    "aws-cdk-lib": "^2.50.0",
+    "aws-sdk": "^2.1245.0",
+    "constructs": "^10.1.147"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

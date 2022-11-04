@@ -43,7 +43,6 @@ export class cdkStack extends Stack {
       code: lambda.Code.fromInline(fs.readFileSync(`${__dirname}/${funcFileName}.js`, { encoding: 'utf-8' })),
       handler: 'index.handler',
       timeout: Duration.seconds(30),
-      logRetention: logs.RetentionDays.ONE_DAY,
       // optional
       lambdaPurpose: 'forAmplifyCustomResource',
     })
